@@ -7,7 +7,7 @@ from pyrogram.types import InlineKeyboardButton
 
 
 def start_button(client):
-    if not FORCE_SUB_CHANNEL1, and not FORCE_SUB_CHANNEL3:
+    if not FORCE_SUB_CHANNEL, and not FORCE_SUB_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(text="• Versi •", callback_data="about"),
@@ -15,7 +15,7 @@ def start_button(client):
             ],
         ]
         return buttons
-    if not FORCE_SUB_CHANNEL1, and FORCE_SUB_CHANNEL3:
+    if not FORCE_SUB_CHANNEL, and FORCE_SUB_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(text="Join Asupan 2", url=client.invitelink2),
@@ -26,7 +26,7 @@ def start_button(client):
             ],
         ]
         return buttons
-    if FORCE_SUB_CHANNEL1, and not FORCE_SUB_CHANNEL3:
+    if FORCE_SUB_CHANNEL, and not FORCE_SUB_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(text="Join Asupan 1", url=client.invitelink),
@@ -37,7 +37,7 @@ def start_button(client):
             ],
         ]
         return buttons
-    if FORCE_SUB_CHANNEL1, and not FORCE_SUB_CHANNEL3:
+    if FORCE_SUB_CHANNEL, and not FORCE_SUB_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(text="Join Asupan 3", url=client.invitelink3),
@@ -49,7 +49,7 @@ def start_button(client):
         ]
         return buttons
 
-    if FORCE_SUB_CHANNEL1, and FORCE_SUB_CHANNEL3:
+    if FORCE_SUB_CHANNEL, and FORCE_SUB_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(text="• Versi •", callback_data="about"),
@@ -65,7 +65,7 @@ def start_button(client):
 
 
 def fsub_button(client, message):
-    if not FORCE_SUB_CHANNEL1, and FORCE_SUB_CHANNEL3:
+    if not FORCE_SUB_CHANNEL, and FORCE_SUB_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(text="Join Asupan 2", url=client.invitelink2),
@@ -83,7 +83,7 @@ def fsub_button(client, message):
         except IndexError:
             pass
         return buttons
-    if FORCE_SUB_CHANNEL1 and not FORCE_SUB_CHANNEL2:
+    if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(text="Join Asupan 1", url=client.invitelink),
@@ -101,7 +101,7 @@ def fsub_button(client, message):
         except IndexError:
             pass
         return button
-    if FORCE_SUB_CHANNEL1, and not FORCE_SUB_CHANNEL3:
+    if FORCE_SUB_CHANNEL, and not FORCE_SUB_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(text="Join Asupan 3", url=client.invitelink3),
@@ -119,7 +119,7 @@ def fsub_button(client, message):
         except IndexError:
             pass
         return buttons
-    if FORCE_SUB_CHANNEL1, and FORCE_SUB_CHANNEL3:
+    if FORCE_SUB_CHANNEL, and FORCE_SUB_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(text="Join Asupan 1", url=client.invitelink),
