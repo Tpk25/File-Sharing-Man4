@@ -54,18 +54,7 @@ FORCE_MSG = os.environ.get(
 )
 
 # Atur Teks Kustom Anda di sini, Simpan (None) untuk Menonaktifkan Teks Kustom
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", VIP LIST INDOVIRAL:
-BOCIL 30K
-ALBUM 25K
-HIJAB 30K
-RANDOM BOKEP INDO/BARAT 15K
-JOIN SEMUANYA SEKALIGUS 50K
-
-PERMANENT, SEKALI BAYAR.
-MEDIA VIRAL UPDATE TIAP HARI DAN TERUS BERTAMBAH
-
-HUBUNGI ADMIN JIKA BERMINAT JOIN
-@estelerku)
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
 # Setel True jika Anda ingin Menonaktifkan tombol Bagikan Kiriman Saluran Anda
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == "True"
